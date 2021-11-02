@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C0B983E2731AF2800271A9B /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B983D2731AF2800271A9B /* RemoteFeedLoaderTests.swift */; };
 		4C62028427307E650007EAB7 /* EssentialFeed.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4C62028327307E650007EAB7 /* EssentialFeed.docc */; };
 		4C62028A27307E650007EAB7 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C62027F27307E650007EAB7 /* EssentialFeed.framework */; };
 		4C62028F27307E650007EAB7 /* EssentialFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C62028E27307E650007EAB7 /* EssentialFeedTests.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C0B983D2731AF2800271A9B /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
 		4C62027F27307E650007EAB7 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C62028227307E650007EAB7 /* EssentialFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EssentialFeed.h; sourceTree = "<group>"; };
 		4C62028327307E650007EAB7 /* EssentialFeed.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EssentialFeed.docc; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				4C62028E27307E650007EAB7 /* EssentialFeedTests.swift */,
+				4C0B983D2731AF2800271A9B /* RemoteFeedLoaderTests.swift */,
 			);
 			path = EssentialFeedTests;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C0B983E2731AF2800271A9B /* RemoteFeedLoaderTests.swift in Sources */,
 				4C62028F27307E650007EAB7 /* EssentialFeedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
