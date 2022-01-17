@@ -74,6 +74,7 @@
 		08FC5AAA22D5F47900148E12 /* FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FC5AA922D5F47900148E12 /* FeedImageDataLoader.swift */; };
 		4C1321C42792D3AD00C15ACB /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1321C32792D3AD00C15ACB /* UITableView+Extension.swift */; };
 		4C1321C62792D4C300C15ACB /* UIImageView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1321C52792D4C300C15ACB /* UIImageView+Animations.swift */; };
+		5D4DF2B827952E4D000A6D0A /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D4DF2B727952E4D000A6D0A /* Feed.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,6 +178,7 @@
 		08FC5AA922D5F47900148E12 /* FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoader.swift; sourceTree = "<group>"; };
 		4C1321C32792D3AD00C15ACB /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		4C1321C52792D4C300C15ACB /* UIImageView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Animations.swift"; sourceTree = "<group>"; };
+		5D4DF2B727952E4D000A6D0A /* Feed.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Feed.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -355,6 +357,7 @@
 				0881811A22FB397C0026B4FD /* FeedLoadingViewModel.swift */,
 				0881811422FB38AB0026B4FD /* FeedImagePresenter.swift */,
 				088F3DE522F0455500920BAC /* FeedImageViewModel.swift */,
+				5D4DF2B727952E4D000A6D0A /* Feed.strings */,
 			);
 			path = "Feed Presentation";
 			sourceTree = "<group>";
@@ -751,6 +754,7 @@
 			files = (
 				0822D0F123056FEB004B3345 /* Feed.storyboard in Resources */,
 				0822D0F3230570F3004B3345 /* Feed.xcassets in Resources */,
+				5D4DF2B827952E4D000A6D0A /* Feed.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
