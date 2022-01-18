@@ -77,6 +77,7 @@
 		5D4DF2BA279530C5000A6D0A /* FeedViewControllerTests+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4DF2B9279530C5000A6D0A /* FeedViewControllerTests+Localization.swift */; };
 		5D4DF2BB279531D3000A6D0A /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D4DF2BD279531D3000A6D0A /* Feed.strings */; };
 		5D4DF2C2279532DB000A6D0A /* FeedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4DF2C1279532DB000A6D0A /* FeedLocalizationTests.swift */; };
+		5D4DF2DE27967B7C000A6D0A /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4DF2DD27967B7C000A6D0A /* MainQueueDispatchDecorator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -185,6 +186,7 @@
 		5D4DF2BE27953214000A6D0A /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Feed.strings"; sourceTree = "<group>"; };
 		5D4DF2BF27953258000A6D0A /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Feed.strings; sourceTree = "<group>"; };
 		5D4DF2C1279532DB000A6D0A /* FeedLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLocalizationTests.swift; sourceTree = "<group>"; };
+		5D4DF2DD27967B7C000A6D0A /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -493,6 +495,7 @@
 			isa = PBXGroup;
 			children = (
 				08EFE6BF22D63E8D00DA417A /* FeedUIComposer.swift */,
+				5D4DF2DD27967B7C000A6D0A /* MainQueueDispatchDecorator.swift */,
 			);
 			path = Composers;
 			sourceTree = "<group>";
@@ -847,6 +850,7 @@
 				08BB7EAB22C1425100F8B83C /* FeedViewController.swift in Sources */,
 				0881811B22FB397C0026B4FD /* FeedLoadingViewModel.swift in Sources */,
 				4C1321C62792D4C300C15ACB /* UIImageView+Animations.swift in Sources */,
+				5D4DF2DE27967B7C000A6D0A /* MainQueueDispatchDecorator.swift in Sources */,
 				08B5EB4E22CE244400FE8683 /* FeedImageCell.swift in Sources */,
 				088F3DE622F0455500920BAC /* FeedImageViewModel.swift in Sources */,
 				08EFE6BD22D6384100DA417A /* FeedImageCellController.swift in Sources */,
