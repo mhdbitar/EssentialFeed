@@ -24,11 +24,22 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7i-zb-a5j">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <connections>
+                                        <action selector="hideMessageAnimated" destination="clu-9B-M8g" eventType="touchUpInside" id="lBL-Vo-IPL"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" red="1" green="0.41568627450000001" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="RKw-AR-r8D" secondAttribute="bottom" id="2EU-X4-RO1"/>
                                 <constraint firstItem="RKw-AR-r8D" firstAttribute="leading" secondItem="clu-9B-M8g" secondAttribute="leading" id="8HB-L1-wJZ"/>
+                                <constraint firstAttribute="trailing" secondItem="x7i-zb-a5j" secondAttribute="trailing" id="DoE-xc-z3z"/>
+                                <constraint firstItem="x7i-zb-a5j" firstAttribute="leading" secondItem="clu-9B-M8g" secondAttribute="leading" id="aMy-XR-Rlm"/>
+                                <constraint firstItem="x7i-zb-a5j" firstAttribute="top" secondItem="clu-9B-M8g" secondAttribute="top" id="dgQ-oN-2Tz"/>
+                                <constraint firstAttribute="bottom" secondItem="x7i-zb-a5j" secondAttribute="bottom" id="lTo-dV-kpg"/>
                                 <constraint firstItem="RKw-AR-r8D" firstAttribute="top" secondItem="clu-9B-M8g" secondAttribute="top" id="rSw-XS-Lvj"/>
                                 <constraint firstAttribute="trailing" secondItem="RKw-AR-r8D" secondAttribute="trailing" id="wpu-vl-Ih8"/>
                             </constraints>
