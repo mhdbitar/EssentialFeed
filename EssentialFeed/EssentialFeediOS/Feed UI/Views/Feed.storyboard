@@ -18,21 +18,23 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2P-Zn-oiL">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKw-AR-r8D">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Error">
-                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </buttonConfiguration>
-                                </button>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <color key="backgroundColor" red="1" green="0.41568627450000001" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstAttribute="bottom" secondItem="h2P-Zn-oiL" secondAttribute="bottom" id="Gv0-vC-xjU"/>
-                                <constraint firstItem="h2P-Zn-oiL" firstAttribute="top" secondItem="clu-9B-M8g" secondAttribute="top" id="Phj-Tw-QsS"/>
-                                <constraint firstItem="h2P-Zn-oiL" firstAttribute="leading" secondItem="clu-9B-M8g" secondAttribute="leading" id="cvh-yE-kc4"/>
-                                <constraint firstAttribute="trailing" secondItem="h2P-Zn-oiL" secondAttribute="trailing" id="xBk-NN-h8V"/>
+                                <constraint firstAttribute="bottom" secondItem="RKw-AR-r8D" secondAttribute="bottom" id="2EU-X4-RO1"/>
+                                <constraint firstItem="RKw-AR-r8D" firstAttribute="leading" secondItem="clu-9B-M8g" secondAttribute="leading" id="8HB-L1-wJZ"/>
+                                <constraint firstItem="RKw-AR-r8D" firstAttribute="top" secondItem="clu-9B-M8g" secondAttribute="top" id="rSw-XS-Lvj"/>
+                                <constraint firstAttribute="trailing" secondItem="RKw-AR-r8D" secondAttribute="trailing" id="wpu-vl-Ih8"/>
                             </constraints>
+                            <connections>
+                                <outlet property="label" destination="RKw-AR-r8D" id="7W2-Ug-pZ7"/>
+                            </connections>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="pGT-Qn-vv2">
                             <rect key="frame" x="0.0" y="681" width="414" height="16"/>
