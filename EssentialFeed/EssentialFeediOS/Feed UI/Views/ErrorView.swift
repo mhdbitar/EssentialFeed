@@ -12,8 +12,8 @@ public final class ErrorView: UIView {
     @IBOutlet private var label: UILabel!
     
     public var message: String? {
-        get { return label.text }
-        set { label.text = newValue }
+        get { return isVisible ? label.text : nil }
+        set { setMessageAnimated(newValue) }
     }
     
     public override func awakeFromNib() {
@@ -23,7 +23,7 @@ public final class ErrorView: UIView {
         alpha = 0
     }
     
-    private func isVisible: Bool {
+    private var isVisible: Bool {
         return alpha > 0
     }
     
@@ -44,12 +44,11 @@ public final class ErrorView: UIView {
     }
     
     @IBAction private func hideMessageAnimated() {
-        UIView.animate(withDuration: 0.25) {
-            self.alpha = 0
-        } completion: { completed in
-            if completed {
-                self.label.text = nil
-            }
-        }
+        UIView.animate(
+            withDuration: 0.25,
+            animations: { self.alpha = 0 },
+            completion: { completed in
+                if completed { self.label.text = nil }
+            })
     }
 }

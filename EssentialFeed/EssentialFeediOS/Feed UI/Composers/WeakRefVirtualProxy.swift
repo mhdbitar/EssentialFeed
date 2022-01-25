@@ -6,7 +6,8 @@
 //  Copyright © 2022 Essential Developer. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import EssentialFeed
 
 final class WeakRefVirtualProxy<T: AnyObject> {
     private weak var object: T?
@@ -33,4 +34,3 @@ extension WeakRefVirtualProxy: FeedImageView where T: FeedImageView, T.Image == 
         object?.display(model)
     }
 }
-

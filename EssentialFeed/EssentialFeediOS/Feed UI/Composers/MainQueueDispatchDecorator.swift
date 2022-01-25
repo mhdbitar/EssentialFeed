@@ -10,15 +10,15 @@ import Foundation
 import EssentialFeed
 
 final class MainQueueDispatchDecorator<T> {
-    private let deocratee: T
+    private let decoratee: T
     
-    init(deocratee: T) {
-        self.deocratee = deocratee
+    init(decoratee: T) {
+        self.decoratee = decoratee
     }
     
     func dispatch(completion: @escaping () -> Void) {
         guard Thread.isMainThread else {
-            DispatchQueue.main.async(execute: completion)
+            return DispatchQueue.main.async(execute: completion)
         }
         
         completion()
@@ -26,16 +26,16 @@ final class MainQueueDispatchDecorator<T> {
 }
 
 extension MainQueueDispatchDecorator: FeedLoader where T == FeedLoader {
-    func load(completion: @escaping (Result) -> Void) {
-        deocratee.load { [weak self] result in
-            self?.dispatch(completion: result)
+    func load(completion: @escaping (FeedLoader.Result) -> Void) {
+        decoratee.load { [weak self] result in
+            self?.dispatch { completion(result) }
         }
     }
 }
 
 extension MainQueueDispatchDecorator: FeedImageDataLoader where T == FeedImageDataLoader {
-    func loadImageData(from url: URL, completion: @escaping (Result) -> Void) -> FeedImageDataLoaderTask {
-        return deocratee.loadImageData(from: url) { [weak self] result in
+    func loadImageData(from url: URL, completion: @escaping (FeedImageDataLoader.Result) -> Void) -> FeedImageDataLoaderTask {
+        return decoratee.loadImageData(from: url) { [weak self] result in
             self?.dispatch { completion(result) }
         }
     }
