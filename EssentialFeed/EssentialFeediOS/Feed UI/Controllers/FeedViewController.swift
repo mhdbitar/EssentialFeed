@@ -6,15 +6,15 @@ import UIKit
 import EssentialFeed
 
 protocol FeedViewControllerDelegate {
-    func didRequestFeedRefresh()
+	func didRequestFeedRefresh()
 }
 
 public final class FeedViewController: UITableViewController, UITableViewDataSourcePrefetching, FeedLoadingView, FeedErrorView {
-    var delegate: FeedViewControllerDelegate?    
-    @IBOutlet private(set) public var errorView: ErrorView?
-    
-    var tableModel = [FeedImageCellController]() {
-        didSet { tableView.reloadData() }
+	var delegate: FeedViewControllerDelegate?
+	@IBOutlet private(set) public var errorView: ErrorView?
+
+	var tableModel = [FeedImageCellController]() {
+		didSet { tableView.reloadData() }
 	}
 
 	public override func viewDidLoad() {
@@ -22,25 +22,25 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
 		
 		refresh()
 	}
-    
-    @IBAction private func refresh() {
-        delegate?.didRequestFeedRefresh()
-    }
-    
-    public func display(_ viewModel: FeedLoadingViewModel) {
-        refreshControl?.update(isRefreshing: viewModel.isLoading)
-    }
-    
-    public func display(_ viewModel: FeedErrorViewModel) {
-        errorView?.message = viewModel.message
-    }
 	
+	@IBAction private func refresh() {
+		delegate?.didRequestFeedRefresh()
+	}
+	
+	public func display(_ viewModel: FeedLoadingViewModel) {
+		refreshControl?.update(isRefreshing: viewModel.isLoading)
+	}
+	
+	public func display(_ viewModel: FeedErrorViewModel) {
+		errorView?.message = viewModel.message
+	}
+
 	public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return tableModel.count
 	}
 	
 	public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return cellController(forRowAt: indexPath).view(in: tableView)
+		return cellController(forRowAt: indexPath).view(in: tableView)
 	}
 	
 	public override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
