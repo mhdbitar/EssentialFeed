@@ -22,6 +22,7 @@
 		5D04E26727A2662D007AC988 /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D04E26627A2662D007AC988 /* FeedImageDataLoaderWithFallbackCompositeTests.swift */; };
 		5D04E27227A3B18E007AC988 /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D04E27127A3B18E007AC988 /* FeedImageDataLoaderWithFallbackComposite.swift */; };
 		5D04E27527A3B207007AC988 /* XCTestCase+MemoryLeakTracking.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D04E27427A3B207007AC988 /* XCTestCase+MemoryLeakTracking.swift .swift */; };
+		5D04E27727A3B279007AC988 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D04E27627A3B279007AC988 /* SharedTestHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		5D04E26627A2662D007AC988 /* FeedImageDataLoaderWithFallbackCompositeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderWithFallbackCompositeTests.swift; sourceTree = "<group>"; };
 		5D04E27127A3B18E007AC988 /* FeedImageDataLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
 		5D04E27427A3B207007AC988 /* XCTestCase+MemoryLeakTracking.swift .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift .swift"; sourceTree = "<group>"; };
+		5D04E27627A3B279007AC988 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				5D04E27427A3B207007AC988 /* XCTestCase+MemoryLeakTracking.swift .swift */,
+				5D04E27627A3B279007AC988 /* SharedTestHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D04E27727A3B279007AC988 /* SharedTestHelpers.swift in Sources */,
 				5D04E26727A2662D007AC988 /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */,
 				5D04E27527A3B207007AC988 /* XCTestCase+MemoryLeakTracking.swift .swift in Sources */,
 				5D04E23F27A117BF007AC988 /* FeedLoaderWithFallbackCompositeTests.swift in Sources */,
