@@ -25,6 +25,7 @@
 		5D04E27727A3B279007AC988 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D04E27627A3B279007AC988 /* SharedTestHelpers.swift */; };
 		5D04E27F27A79F9E007AC988 /* FeedLoaderCacheDecoratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D04E27E27A79F9E007AC988 /* FeedLoaderCacheDecoratorTests.swift */; };
 		5D04E28127A7A2AE007AC988 /* FeedLoaderStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D04E28027A7A2AE007AC988 /* FeedLoaderStub.swift */; };
+		5D04E28327A7A3B3007AC988 /* XCTestCase+FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D04E28227A7A3B3007AC988 /* XCTestCase+FeedLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		5D04E27627A3B279007AC988 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 		5D04E27E27A79F9E007AC988 /* FeedLoaderCacheDecoratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderCacheDecoratorTests.swift; sourceTree = "<group>"; };
 		5D04E28027A7A2AE007AC988 /* FeedLoaderStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderStub.swift; sourceTree = "<group>"; };
+		5D04E28227A7A3B3007AC988 /* XCTestCase+FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FeedLoader.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				5D04E27427A3B207007AC988 /* XCTestCase+MemoryLeakTracking.swift .swift */,
 				5D04E27627A3B279007AC988 /* SharedTestHelpers.swift */,
 				5D04E28027A7A2AE007AC988 /* FeedLoaderStub.swift */,
+				5D04E28227A7A3B3007AC988 /* XCTestCase+FeedLoader.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D04E27727A3B279007AC988 /* SharedTestHelpers.swift in Sources */,
+				5D04E28327A7A3B3007AC988 /* XCTestCase+FeedLoader.swift in Sources */,
 				5D04E27F27A79F9E007AC988 /* FeedLoaderCacheDecoratorTests.swift in Sources */,
 				5D04E26727A2662D007AC988 /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */,
 				5D04E27527A3B207007AC988 /* XCTestCase+MemoryLeakTracking.swift .swift in Sources */,
