@@ -185,14 +185,14 @@
 		5D04E23D27A117BF007AC988 /* EssentialAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				5D04E27327A3B1F8007AC988 /* Helpers */,
-				5D04E23E27A117BF007AC988 /* FeedLoaderWithFallbackCompositeTests.swift */,
-				5D04E26627A2662D007AC988 /* FeedImageDataLoaderWithFallbackCompositeTests.swift */,
-				5D04E27E27A79F9E007AC988 /* FeedLoaderCacheDecoratorTests.swift */,
-				5D1298D827A8EDA200AF4792 /* FeedImageDataLoaderCacheDecoratorTests.swift */,
-				5D26A5E227AB9D5400D37210 /* FeedUIIntegrationTests.swift */,
 				5D26A5C227AB973600D37210 /* SceneDelegateTests.swift */,
 				5D26A5E427AB9DCB00D37210 /* FeedAcceptanceTests.swift */,
+				5D26A5E227AB9D5400D37210 /* FeedUIIntegrationTests.swift */,
+				5D04E23E27A117BF007AC988 /* FeedLoaderWithFallbackCompositeTests.swift */,
+				5D04E27E27A79F9E007AC988 /* FeedLoaderCacheDecoratorTests.swift */,
+				5D04E26627A2662D007AC988 /* FeedImageDataLoaderWithFallbackCompositeTests.swift */,
+				5D1298D827A8EDA200AF4792 /* FeedImageDataLoaderCacheDecoratorTests.swift */,
+				5D04E27327A3B1F8007AC988 /* Helpers */,
 			);
 			path = EssentialAppTests;
 			sourceTree = "<group>";
@@ -455,7 +455,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -510,7 +510,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -539,12 +539,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bitar.EssentialApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Debug;
 		};
@@ -567,12 +569,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bitar.EssentialApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Release;
 		};
@@ -585,7 +589,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZUTM2D9M6W;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bitar.EssentialAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -593,6 +597,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EssentialApp.app/EssentialApp";
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Debug;
 		};
@@ -605,7 +610,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZUTM2D9M6W;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bitar.EssentialAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -613,6 +618,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EssentialApp.app/EssentialApp";
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Release;
 		};
