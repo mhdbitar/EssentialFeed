@@ -88,6 +88,7 @@
 		5D1298DF27A8F82500AF4792 /* FeedImageDataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1298DE27A8F82500AF4792 /* FeedImageDataCache.swift */; };
 		5D68ECFE27B0E18D000D92DF /* FeedSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D68ECFD27B0E18D000D92DF /* FeedSnapshotTests.swift */; };
 		5DC4AE9B27BA1C540047A138 /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC4AE9A27BA1C540047A138 /* UIImage+TestHelpers.swift */; };
+		5DC4AE9D27BA1E1C0047A138 /* UITableView+HeaderSizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC4AE9C27BA1E1C0047A138 /* UITableView+HeaderSizing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -208,6 +209,7 @@
 		5D1298DE27A8F82500AF4792 /* FeedImageDataCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataCache.swift; sourceTree = "<group>"; };
 		5D68ECFD27B0E18D000D92DF /* FeedSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSnapshotTests.swift; sourceTree = "<group>"; };
 		5DC4AE9A27BA1C540047A138 /* UIImage+TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+TestHelpers.swift"; sourceTree = "<group>"; };
+		5DC4AE9C27BA1E1C0047A138 /* UITableView+HeaderSizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+HeaderSizing.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -473,6 +475,7 @@
 				0822D0F423058078004B3345 /* UITableView+Dequeueing.swift */,
 				0822D0F6230581D2004B3345 /* UIImageView+Animations.swift */,
 				08A3F2BA232BA64700127C15 /* UIRefreshControl+Helpers.swift */,
+				5DC4AE9C27BA1E1C0047A138 /* UITableView+HeaderSizing.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -898,6 +901,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DC4AE9D27BA1E1C0047A138 /* UITableView+HeaderSizing.swift in Sources */,
 				08A3F2B2232AA1C200127C15 /* ErrorView.swift in Sources */,
 				08A3F2BB232BA64700127C15 /* UIRefreshControl+Helpers.swift in Sources */,
 				08B5EB5022CE328100FE8683 /* UIView+Shimmering.swift in Sources */,
